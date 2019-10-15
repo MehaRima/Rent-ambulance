@@ -142,7 +142,7 @@
 <!-- Footer -->
 <div id="footer">
 	<div class="shell">
-		<span class="left">&copy; <?php echo date("Y");?> - projectworlds</span>
+		<span class="left">&copy; <?php echo date("Y");?> - meharima</span>
 		<span class="right">
 			Design by <a href="">meharima</a>
 		</span>
