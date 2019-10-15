@@ -19,7 +19,16 @@
 			include 'header.php';
 		?>
 
-				<section class="search">
+			<section class="caption">
+				<h2 class="caption" style="text-align: center">Find ambulance </h2>
+				<h3 class="properties" style="text-align: center">ambulance_1 - ambulance_2 -ambulance_3</h3>
+			</section>
+	</section><!--  end hero section  -->
+
+
+
+
+	<section class="search">
 		<div class="wrapper">
 			<form action="#" method="post">
 				<input type="text" id="search" name="search" placeholder="What are you looking for?"  autocomplete="off"/>
@@ -56,54 +65,76 @@
 
 	<section class="listings">
 		<div class="wrapper">
-			<ul class="properties_list">
-				<h3 style="text-decoration: underline">Make Payments Here</h3>
-				<h5>Paybill Number: 00000</h5>
-				<h6>Business Number: ID Number Registered with.</h6>
+			
+				<h3>Signup Here</h3>
 				<form method="post">
 					<table>
 						<tr>
-							<td>MPESA Transaction ID:</td>
-							<td><input type="text" name="mpesa" required></td>
+							<td>Full Name:</td>
+							<td><input type="text" name="fname" required></td>
 						</tr>
 						<tr>
-							<td>National ID Number:</td>
+							<td>Phone Number:</td>
+							<td><input type="text" name="phone" required></td>
+						</tr>
+						<tr>
+							<td>Email Address:</td>
+							<td><input type="email" name="email" required></td>
+						</tr>
+						<tr>
+							<td>ID Number:</td>
 							<td><input type="text" name="id_no" required></td>
 						</tr>
-						
 						<tr>
-							<td colspan="2" style="text-align:right"><input type="submit" name="pay" value="Submit Details"></td>
+							<td>Gender:</td>
+							<td>
+								<select name="gender">
+									<option> Select Gender </option>
+									<option> Male </option>
+									<option> Female </option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Location:</td>
+							<td><input type="text" name="location" required></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:right"><input type="submit" name="save" value="Submit Details"></td>
 						</tr>
 					</table>
 				</form>
 				<?php
-						if(isset($_POST['pay'])){
+						if(isset($_POST['save'])){
 							include 'includes/config.php';
-							$mpesa = $_POST['mpesa'];
+							$fname = $_POST['fname'];
 							$id_no = $_POST['id_no'];
+							$gender = $_POST['gender'];
+							$email = $_POST['email'];
+							$phone = $_POST['phone'];
+							$location = $_POST['location'];
 							
-							$qry = "UPDATE client SET mpesa = '$mpesa' WHERE id_no = '$id_no'";
+							$qry = "INSERT INTO client (fname,id_no,gender,email,phone,location,status)
+							VALUES('$fname','$id_no','$gender','$email','$phone','$location','Available')";
 							$result = $conn->query($qry);
 							if($result == TRUE){
 								echo "<script type = \"text/javascript\">
-											alert(\"Payment Successfully Done. Wait for Admin Approval\");
-											window.location = (\"wait.php\")
+											alert(\"Successfully Registered.\");
+											window.location = (\"account.php\")
 											</script>";
 							} else{
 								echo "<script type = \"text/javascript\">
 											alert(\"Registration Failed. Try Again\");
-											window.location = (\"pay.php\")
+											window.location = (\"signup.php\")
 											</script>";
 							}
 						}
 						
 					  ?>
 			</ul>
-			<div class="more_listing">
-				<a href="#" class="more_listing_btn">View More Listings</a>
-			</div>
 		</div>
 	</section>	<!--  end listing section  -->
+
 
 	<footer>
 		<div class="wrapper footer">
