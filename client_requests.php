@@ -119,14 +119,15 @@
 <!-- End Container -->
 
 <!-- Footer -->
-<div id="footer">
+	<div id="footer">
 	<div class="shell">
-		<span class="left">&copy; <?php echo date("Y");?> - projectworlds</span>
+		<span class="left">&copy; <?php echo date("Y");?> - catywhiny</span>
 		<span class="right">
-			Design by <a href="http://projectworlds.in">projectworlds</a>
+			Design by <a href="">meharima</a>
 		</span>
 	</div>
 </div>
+
 <!-- End Footer -->
 	
 </body>
