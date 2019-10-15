@@ -99,9 +99,9 @@
 				<li class="links">
 					<ul>
 						<li>OUR CAR TYPES</li>
-						<li><a href="#">Mercedes</a></li>
-						<li><a href="#">Range Rover</a></li>
-						<li><a href="#">Landcruisers</a></li>
+						<li><a href="#">ambulance_1 </a></li>
+						<li><a href="#"> ambulance_2 </a></li>
+						<li><a href="#">ambulance_3</a></li>
 						<li><a href="#">Others.</a></li>
 					</ul>
 				</li>
