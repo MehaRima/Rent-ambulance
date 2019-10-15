@@ -8,7 +8,7 @@
 	}
 ?>
 <div id="top">
-			<h1><a href="#">projectworlds</a></h1>
+			<h1><a href="#">meharima</a></h1>
 			<div id="top-navigation">
 				Welcome <a href="#"><strong>Administrator</strong></a>
 				<span>|</span>
