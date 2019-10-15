@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Car Rental</title>
+	<title>Rent ambulance</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<meta name="description" content="La casa free real state fully responsive html5/css3 home page website template"/>
@@ -20,8 +20,8 @@
 		?>
 
 			<section class="caption">
-				<h2 class="caption" style="text-align: center">Find You Dream Cars For Hire</h2>
-				<h3 class="properties" style="text-align: center">Range Rovers - Mercedes Benz - Landcruisers</h3>
+				<h2 class="caption" style="text-align: center">Find ambulance </h2>
+				<h3 class="properties" style="text-align: center">ambulance_1 - ambulance_2 -ambulance_3</h3>
 			</section>
 	</section><!--  end hero section  -->
 
